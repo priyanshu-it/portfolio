@@ -105,7 +105,6 @@ main {
     margin: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(1px, 1fr));
-    /* Added line: Creates responsive grid items */
     gap: 55px;
 }
 
