@@ -18,9 +18,10 @@ header img {
     height: 120px;
     border-radius: 50%;
     border: 4px solid rosybrown;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
     object-fit: cover;
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 70px;
 }
 
 h4 {
@@ -29,12 +30,22 @@ h4 {
 
 nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    justify-content: center;
+    background: linear-gradient(90deg, #333, #321e1e);
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+    border-bottom: 2px solid rosybrown;
+    padding: 13px 0;
+    margin: 0;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 40px;
+    margin: 0 36px;
 }
 
 nav ul li a {
@@ -104,7 +115,7 @@ main {
     padding: 0;
     margin: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(1px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(1px, 1fr)); 
     gap: 55px;
 }
 
@@ -155,7 +166,7 @@ main {
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 1px 0;
     background: linear-gradient(90deg, #333, #321e1e);
     color: #fff;
     position: relative;
@@ -170,7 +181,6 @@ html {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-
     /* Centering header text */
     header {
         text-align: center;
@@ -186,6 +196,7 @@ html {
         margin-right: auto;
         object-fit: cover;
         margin-bottom: 0;
+        margin-top: 14px;
     }
 
     /* Adjust milestone section */
