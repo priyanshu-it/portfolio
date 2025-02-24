@@ -159,7 +159,7 @@ main {
 }
 
 .education-list li b {
-    font-weight: bold;
+    font-weight: 600;
     color: rosybrown;
     text-decoration: dashed underline #333;
 }
