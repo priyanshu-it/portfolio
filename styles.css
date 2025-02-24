@@ -158,9 +158,10 @@ main {
     font-size: 16px;
 }
 
-.education-list li strong {
+.education-list li b {
     font-weight: bold;
     color: rosybrown;
+    text-decoration: dashed underline #333;
 }
 
 /* Footer */
