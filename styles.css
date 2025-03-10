@@ -45,7 +45,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 40px;
+    margin: 0 36px;
 }
 
 nav ul li a {
@@ -181,7 +181,7 @@ html {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 920px) {
     /* Centering header text */
     header {
         text-align: center;
