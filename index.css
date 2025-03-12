@@ -1,2 +1,19 @@
 /* main.css */
 @import url('styles.css');
+
+/* Set different widths based on the skill percentage */
+.skills-list li[data-percent="59"] .progress-bar div {
+    width: 59%;
+}
+.skills-list li[data-percent="53"] .progress-bar div {
+    width: 53%;
+}
+.skills-list li[data-percent="85"] .progress-bar div {
+    width: 85%;
+}
+.skills-list li[data-percent="75"] .progress-bar div {
+    width: 75%;
+}
+.skills-list li[data-percent="66"] .progress-bar div {
+    width: 66%;
+}
