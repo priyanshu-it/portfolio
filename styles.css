@@ -48,6 +48,11 @@ nav ul {
     margin: 0;
 }
 
+nav ul:hover {
+    filter: drop-shadow( 0 0 10px rgba(255, 255, 255, 0.7));
+    transform: scale(1.01);
+}
+
 nav ul li {
     display: inline;
     margin: 0 36px;
@@ -61,9 +66,9 @@ nav ul li a {
 }
 
 nav ul li a:focus,
-nav ul li a:hover {
-    color: rosybrown;
-    text-decoration: underline;
+nav ul li a:hover{
+    color: rgb(255, 210, 210);
+    text-decoration: underline wheat;
 }
 
 /* Main Layout */
@@ -108,7 +113,7 @@ main {
     align-items: center;
     text-align: left;
     font-weight: bold;
-    position: relative; /* Add relative position for positioning the progress bar */
+    position: relative; 
 }
 
 .skills-list li i {
@@ -174,8 +179,23 @@ main {
 
 .contact-link:hover,
 .contact-link:focus {
+    color: rosybrown;
     background-color: #f4f4f4;
-    outline: 3px solid rosybrown;
+}
+
+#instagram:hover,
+#instagram:focus {
+    filter: drop-shadow(0 0 5px #e4405f);
+}
+
+#linkedin:hover,
+#linkedin:focus {
+    filter: drop-shadow(0 0 5px #0077b5);
+}
+
+#github:hover,
+#github:focus {
+    filter: drop-shadow(0 0 5px #333);
 }
 
 /* Education Section */
@@ -224,6 +244,7 @@ footer {
         object-fit: cover;
         margin-bottom: 0;
         margin-top: 14px;
+        outline: 3px solid wheat;
     }
 
     /* Adjust milestone section */
@@ -246,3 +267,4 @@ footer {
         display: none;
     }
 }
+/* line 270 */
