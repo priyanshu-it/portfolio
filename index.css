@@ -16,3 +16,12 @@
 .skills-list li[data-percent="66"] .progress-bar div {
     width: 66%;
 }
+.skills-list li[data-percent="45"] .progress-bar div {
+    width: 45%;
+}
+.skills-list li[data-percent="55"] .progress-bar div {
+    width: 55%;
+}
+.skills-list li[data-percent="63"] .progress-bar div {
+    width: 63%;
+}
