@@ -1,7 +1,6 @@
 /* Base Styles */
-
 html {
-    scroll-behavior: smooth !important; /* Smooth Scroll */
+    scroll-behavior: smooth !important;
 }
 
 body {
@@ -11,6 +10,7 @@ body {
     background-color: #f4f4f4;
 }
 
+/* Header */
 header {
     background: linear-gradient(90deg, #333, #321e1e);
     color: #fff;
@@ -25,14 +25,10 @@ header img {
     border: 4px solid rosybrown;
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
     object-fit: cover;
-    margin-bottom: 0;
     margin-top: 70px;
 }
 
-h4 {
-    color: rosybrown;
-}
-
+/* Navigation */
 nav ul {
     list-style: none;
     display: flex;
@@ -46,15 +42,15 @@ nav ul {
     border-bottom: 2px solid rosybrown;
     padding: 14px 0;
     margin: 0;
+    transition: all 0.3s;
 }
 
 nav ul:hover {
-    filter: drop-shadow( 0 0 10px rgba(255, 255, 255, 0.7));
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.7));
     transform: scale(1.01);
 }
 
 nav ul li {
-    display: inline;
     margin: 0 36px;
 }
 
@@ -62,16 +58,18 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s;
+    transition: color 0.3s, text-decoration 0.3s;
 }
 
-nav ul li a:focus,
-nav ul li a:hover{
+nav ul li a:hover,
+nav ul li a:focus {
     color: rgb(255, 210, 210);
     text-decoration: underline wheat;
+    text-transform: uppercase;
+    font-size: 16px; font-weight: bold;
 }
 
-/* Main Layout */
+/* Main Content */
 main {
     padding: 20px;
 }
@@ -82,14 +80,15 @@ main {
     align-items: center;
 }
 
+/* Milestones */
 .milestone {
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
     background: #fff;
     border: 2px solid #333;
     border-radius: 10px;
     margin: 20px;
     padding: 20px;
     width: 80%;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.5));
     transition: transform 0.3s;
 }
 
@@ -98,6 +97,24 @@ main {
 }
 
 /* Skills Section */
+.skills-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skills-column h4 {
+    color: rosybrown;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid rosybrown;
+    padding-bottom: 0.3rem;
+    margin: 0;
+}
+
 .skills-list {
     list-style: none;
     padding: 0;
@@ -111,9 +128,8 @@ main {
     border-radius: 5px;
     display: flex;
     align-items: center;
-    text-align: left;
     font-weight: bold;
-    position: relative; 
+    position: relative;
 }
 
 .skills-list li i {
@@ -134,14 +150,17 @@ main {
     left: 0;
     width: 100%;
     height: 4px;
-    background-color: lightgray;
+    background-color: #fff;
+    border: 1px solid darkgray;
     border-radius: 3px;
+    overflow: hidden;
 }
 
-.skills-list li .progress-bar div {
+.skills-list li .progress-bar>div {
     height: 100%;
     background-color: rosybrown;
-    border-radius: 3px;
+    width: 0;
+    transition: width 1s ease;
 }
 
 /* Contact Section */
@@ -150,8 +169,7 @@ main {
     padding: 0;
     margin: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(1px, 1fr)); 
-    /* Added line: Creates responsive grid items */
+    grid-template-columns: repeat(auto-fill, minmax(1px, 1fr));
     gap: 55px;
 }
 
@@ -183,6 +201,7 @@ main {
     background-color: #f4f4f4;
 }
 
+/* Platform Highlights */
 #instagram:hover,
 #instagram:focus {
     filter: drop-shadow(0 0 5px #e4405f);
@@ -226,9 +245,8 @@ footer {
     width: 100%;
 }
 
-/* Responsive Design */
-@media (max-width: 920px) {
-    /* Centering header text */
+/* Responsive Styles */
+@media (width < 1000px) {
     header {
         text-align: center;
     }
@@ -236,23 +254,19 @@ footer {
     header img {
         width: 90px;
         height: 90px;
-        border-radius: 50%;
+        margin: 14px auto 0;
         border: 4px solid rosybrown;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        object-fit: cover;
-        margin-bottom: 0;
-        margin-top: 14px;
         outline: 3px solid wheat;
     }
 
-    /* Adjust milestone section */
-    .milestone {
-        width: 85%;
+    main {
+        margin: 0 14px;
     }
 
-    /* Styling for skills list items and contact links */
+    .milestone {
+        width: 100%;
+    }
+
     .skills-list li,
     .contact-link {
         font-size: 16px;
@@ -267,4 +281,5 @@ footer {
         display: none;
     }
 }
-/* line 270 */
+
+/* line 285 - styles.css */
