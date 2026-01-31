@@ -8,7 +8,7 @@ A responsive and modern personal portfolio website built using:
 - **Tailwind CSS**
 - **Bootstrap**
 
-## 🚀 Features
+## 🚀 Features 
 
 - Fully responsive layout
 - Smooth scrolling and transitions
