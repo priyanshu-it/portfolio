@@ -1,7 +1,8 @@
 /* main.css */
 @import url('style.css');
 
-/* Floating Navigation */
+
+/* === Floating Navigation === */
 
 .floating-nav {
   position: fixed;
