@@ -20,7 +20,7 @@
       <div class="hero-text">
         <h1>Hi, I'm Priyanshu</h1>
         <img
-          src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=400&size=14&pause=1000&color=333&width=270&height=40&lines=Hey%2C+I'm+Priyanshu!;Fresher;Full+Stack+Developer;AI+Explorer;A+Portfolio+{+RESUME+};"
+          src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=400&size=14&pause=1000&color=777&width=270&height=40&lines=Hey%2C+I'm+Priyanshu!;Fresher;Full+Stack+Developer;AI+Explorer;A+Portfolio+{+RESUME+};"
           alt="Typing SVG" class="typing-svg">
       </div>
       <div class="hero-img">
@@ -31,7 +31,7 @@
     </header>
 
     <!-- About -->
-    <section class="section">
+    <section class="section" id="about">
       <h2><i class="fa fa-route"></i> About</h2>
       <p>
         I am a proactive and self-driven developer skilled in both front-end and back-end technologies including
@@ -87,8 +87,8 @@
     </section>
 
     <!-- Projects -->
-    <section class="section">
-      <h2><i class="fa fa-project-diagram"></i> Projects</h2>
+    <section class="section" id="projects">
+      <h2><i class="fas fa-folder"></i> Projects</h2>
       <div class="projects">
 
         <div class="project-card">
@@ -123,14 +123,19 @@
             efficient task distribution.
             <br> Tech: mern stack and AI.
           </p>
-          <a href="#">Link</a>
+          <a href="blank_target">Link</a>
         </div>
 
       </div>
     </section>
 
     <!-- Contact -->
-    <section class="section">
+    <section class="section card" id="contact">
+      <p style="font-size: large; font-weight: 500; text-align: center;"><i class="fas fa-user"></i></p>
+      <p style="font-size: large; font-weight: 500; text-align: center;">Contact Us</p>
+      <p style="text-align: center;">Feel free to reach out if you have any questions or want to connect!</p>
+      <div class="decorative-dots"></div>
+
       <h2>Let's Connect:</h2>
       <ul class="contact-list">
         <li><a href="https://www.instagram.com/priyanshu0391" target="_blank" class="contact-link" id="instagram"
@@ -142,13 +147,18 @@
         <li><a href="https://codolio.com/profile/priyanshu-it" target="_blank" class="contact-link" id="codolio"
             title="Visit my Codolio"><i class="fa-solid fa-code"></i></a></li>
       </ul>
+
     </section>
 
-    <a href="#" class="svged" style="display: flex; justify-content: center; align-items: center; margin-top: 30px;">
-      <svg width="30" height="30" viewBox="0 0 25 25" fill="none" stroke="#333" stroke-width="4">
-        <path d="M12 19V5M5 12l7-7 7 7"></path>
-      </svg>
-    </a>
+    <!-- Floating Navigation -->
+    <div class="floating-nav">
+      <a href="#"><i class="fas fa-home"></i></a>
+      <a href="#about"><i class="fa fa-route"></i></a>
+      <a href="#projects"><i class="fas fa-folder"></i></a>
+      <a href="#contact"><i class="fas fa-user"></i></a>
+      |
+      <a href="#" id="themeToggle"><i class="fas fa-moon"></i></a>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -159,4 +169,4 @@
 </body>
 </html>
 
-<!-- Line 162 -->
+<!-- Line 172 -->

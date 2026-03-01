@@ -1,2 +1,84 @@
 /* main.css */
 @import url('style.css');
+
+/* Floating Navigation */
+
+.floating-nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: flex;
+  gap: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+.floating-nav a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.floating-nav a:hover {
+  background: #e66078;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* ===== Dark Mode ===== */
+
+body.dark {
+  background: #111;
+  color: #f5f5f5;
+  /* Lighter text for better contrast */
+}
+
+body.dark .decorative-dots {
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #111),
+    url("https://i.pinimg.com/originals/4c/b2/47/4cb247cc52a46ce5465327355f6cea58.gif");
+  opacity: 0.2;
+}
+
+body.dark .navbar,
+body.dark .floating-nav {
+  background: rgba(20, 20, 20, 0.8);
+}
+
+body.dark .card,
+body.dark .project-card {
+  background: #1b1b1b;
+  border: 1px solid #333;
+}
+
+body.dark .tags span {
+  background: #222;
+  border: 1px solid #333;
+  color: #ddd;
+}
+
+body.dark .project-card a {
+  background: #222;
+  border: 1px solid #333;
+  color: #fff;
+}
+
+body.dark .contact-link {
+  background: #222;
+  color: #aaa;
+}
+
+/* line 85 */
