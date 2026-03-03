@@ -15,7 +15,7 @@
   border-radius: 50px;
   display: flex;
   gap: 18px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0.5px 10px lightpink;
   z-index: 1000;
 }
 
@@ -23,7 +23,7 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: #f4f4f4;
+  background: #f4eeee;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,6 +38,7 @@
   color: white;
   transform: translateY(-3px);
 }
+
 
 /* ===== Dark Mode ===== */
 
@@ -54,7 +55,6 @@ body.dark .decorative-dots {
   opacity: 0.2;
 }
 
-body.dark .navbar,
 body.dark .floating-nav {
   background: rgba(20, 20, 20, 0.8);
 }
