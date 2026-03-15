@@ -1,12 +1,10 @@
 /* main.css */
 @import url('style.css');
 
-
 /* === Floating Navigation === */
-
 .floating-nav {
   position: fixed;
-  bottom: 20px;
+  bottom: 14px;
   left: 50%;
   transform: translateX(-50%);
   background: rgba(255, 255, 255, 0.7);
@@ -15,7 +13,7 @@
   border-radius: 50px;
   display: flex;
   gap: 18px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 0.5px 10px lightpink;
   z-index: 1000;
 }
 
@@ -23,7 +21,7 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  background: #f4f4f4;
+  background: #f4eeee;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,8 +37,8 @@
   transform: translateY(-3px);
 }
 
-/* ===== Dark Mode ===== */
 
+/* ===== Dark Mode ===== */
 body.dark {
   background: #111;
   color: #f5f5f5;
@@ -48,13 +46,11 @@ body.dark {
 }
 
 body.dark .decorative-dots {
-  background-image:
-    linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #111),
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), #111),
     url("https://i.pinimg.com/originals/4c/b2/47/4cb247cc52a46ce5465327355f6cea58.gif");
   opacity: 0.2;
 }
 
-body.dark .navbar,
 body.dark .floating-nav {
   background: rgba(20, 20, 20, 0.8);
 }
@@ -63,6 +59,7 @@ body.dark .card,
 body.dark .project-card {
   background: #1b1b1b;
   border: 1px solid #333;
+  box-shadow: 0 0 5px snow;
 }
 
 body.dark .tags span {
@@ -82,4 +79,4 @@ body.dark .contact-link {
   color: #aaa;
 }
 
-/* line 85 */
+/* line 82 */
