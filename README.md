@@ -1,6 +1,6 @@
 # 💼 Portfolio Website
 
-A responsive and modern personal portfolio website built using:
+A responsive and modern personal portfolio website built using: 
 
 - **HTML**
 - **CSS**
