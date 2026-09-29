@@ -58,19 +58,16 @@ body.dark .floating-nav {
 body.dark .card,
 body.dark .project-card {
   background: #1b1b1b;
-  border: 1px solid #333;
   box-shadow: 0 0 5px snow;
 }
 
 body.dark .tags span {
   background: #222;
-  border: 1px solid #333;
   color: #ddd;
 }
 
 body.dark .project-card a {
   background: #222;
-  border: 1px solid #333;
   color: #fff;
 }
 
